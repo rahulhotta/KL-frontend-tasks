@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,32 +10,41 @@
     width: 100vw;
     height: 100vh;
     color: white;
-    padding: 10px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-.home__header{
-    /* padding: 10px; */
+.home__body{
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home__img{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    margin: 5vh 5vw;
+}
+.home__body__right__name{
+    color: aquamarine;
+    font-size: 2.6rem;
+}
+.home__body__right__desc{
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+.home__body__third{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 2rem ;
-    background-color: None !important;
+    gap: 10px;
+    position: fixed;
+    bottom: 0px;
+    right: 3vw;
 }
-.home__header__image{
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
-    margin: 10px;
-    margin-right: 20px;
-}
-.home__header__desc{
-    flex-wrap: wrap;
-}
-
-@media screen and (min-width: 600px) {
-    .home__header{
-        flex-direction: row;
-        font-size: 1rem;
-    }
-  }
