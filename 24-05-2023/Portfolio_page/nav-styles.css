@@ -21,8 +21,6 @@
 .button:hover{
     background-color: aquamarine;
     color: black;
-    border-radius: 25px;
     cursor: pointer;
-    padding: 7px 10px;
     border: 2px solid aquamarine;
 }

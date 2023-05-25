@@ -6,11 +6,12 @@
 }
 .home__container{
     background-color: #000000;
-    background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+    background-image: url("./desktop_bg.jfif");
     width: 100vw;
     height: 100vh;
     color: white;
     font-family: 'Poppins', sans-serif;
+    
 }
 .home__body{
     width: 90vw;
@@ -60,10 +61,24 @@ a{
     margin-top: 5vh;
     border-bottom: 2px solid aquamarine;
 }
+.home__img {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
 @media screen and (max-width: 670px) {
     .home__img{
-        height: 20vh;
-        width: 20vh;
+        height: 30vh;
+        width: 30vh;
     }
     .home__body{
         flex-direction: column;
