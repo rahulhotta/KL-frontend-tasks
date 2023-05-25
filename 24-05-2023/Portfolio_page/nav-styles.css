@@ -1,5 +1,6 @@
 .nav__container{
     backdrop-filter: blur(40px);
+    /* background-color: red; */
     box-shadow: 2px 5px 10px #282828;
     padding: 10px 20px;
     display: flex;
@@ -24,8 +25,4 @@
     cursor: pointer;
     padding: 7px 10px;
     border: 2px solid aquamarine;
-}
-.line{
-    border-left: 2px solid aquamarine;
-    height: 30vh;
 }

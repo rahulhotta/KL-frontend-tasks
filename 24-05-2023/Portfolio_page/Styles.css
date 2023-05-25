@@ -48,3 +48,38 @@ a{
     bottom: 0px;
     right: 3vw;
 }
+.line{
+    border-left: 2px solid aquamarine;
+    height: 30vh;
+}
+.KL{
+    color: aquamarine;
+}
+.Projects__heading{
+    color: aquamarine;
+    margin-top: 5vh;
+    border-bottom: 2px solid aquamarine;
+}
+@media screen and (max-width: 670px) {
+    .home__img{
+        height: 20vh;
+        width: 20vh;
+    }
+    .home__body{
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+    }
+    .home__body__right{
+        margin: 20px;
+        text-align: center;
+    }
+    .home__body__third{
+        flex-direction: row;
+        position: relative;
+    }
+    .line{
+        height: 0;
+        border: none;
+    }
+}
