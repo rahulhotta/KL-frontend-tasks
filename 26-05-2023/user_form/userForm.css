@@ -33,17 +33,17 @@ body{
     margin-bottom: 3px;
 }
 input{
-    background: inherit;
-    border: 2px solid black;
+    background: white;
+    border: 2px solid black !important;
     border-radius: 5px;
     height: 30px;
-    width: clamp(200px, 80vw, 300px);
+    width: clamp(200px, 80vw, 300px) !important;
     font-size: 1rem;
     padding: 2px;
 }
 select{
     border: 2px solid black;
-    background-color: inherit;
+    background-color: white;
     border-radius: 5px;
     height: 30px;
     width: clamp(200px, 80vw, 300px);
@@ -55,7 +55,10 @@ select{
    align-self: flex-start; 
    background-color: inherit;
 }
-
+.error_msg{
+    color: red;
+    padding-top: 3px;
+}
 .submit__btn{
     background-color: rgb(141, 255, 141);
     border: 2px solid black;
