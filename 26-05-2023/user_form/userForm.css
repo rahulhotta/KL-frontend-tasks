@@ -66,6 +66,9 @@ select{
     height: 30px;
     width: clamp(200px, 80vw, 300px);
 }
+.dot{
+    color: red;
+}
 
 @media screen and (max-width: 1000px){
     .bodyImg{

@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="userForm.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="userForm.css" />
     <title>User Form</title>
-</head>
-<body>
-    
-    <form  class="user__form__container" name="userForm" id="userForm">
-        <label >
-            <div class="label__text">User Name*</div> 
-            <input type="text" name="name_input" >
-            <div id="name_input_error_msg" class="error_msg"></div>
-        </label>
-        <label class="drop-down">
-            <div class="label__text">User Type*</div>
-            <select name="user type" > 
-                <option value="Admin">Admin</option>
-                <option value="Client">Client</option>
-            </select>
-        </label>
-        <label >
-            <div class="label__text">Contact Number(Optional)</div> 
-            <!-- <input type="text" pattern="^[789]\d{9}" name="phone_input"> -->
-            <input type="text"  name="phone_input">
-            <div id="phone_input_error_msg" class="error_msg"></div>
-        </label>
-        <label >
-            <div class="label__text">Email Id*</div> 
-            <!-- <input type="text"  pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" name="email_input"> -->
-            <input type="text"   name="email_input">
-            <div id="email_error_msg" class="error_msg"></div>
-        </label>
-        <label >
-            <div class="label__text">City*</div> 
-            <input type="text"  name="city_input">
-            <div id="city_input_error_msg" class="error_msg"></div>
-        </label>
-        <label >
-            <div class="label__text">State*</div> 
-            <input type="text"  name="state_input">
-            <div id="state_input_error_msg" class="error_msg"></div>
-        </label>
-        <button  class="submit__btn">Submit</button>
+  </head>
+  <body>
+    <form class="user__form__container" name="userForm" id="userForm">
+      <label>
+        <div class="label__text">User Name<span class="dot">*</span></div>
+        <input type="text" name="name_input" />
+        <div id="name_input_error_msg" class="error_msg"></div>
+      </label>
+      <label class="drop-down">
+        <div class="label__text">User Type<span class="dot">*</span></div>
+        <select name="user type">
+          <option value="Admin">Admin</option>
+          <option value="Client">Client</option>
+        </select>
+      </label>
+      <label>
+        <div class="label__text">Contact Number(Optional)</div>
+
+        <input type="text" name="phone_input" />
+        <div id="phone_input_error_msg" class="error_msg"></div>
+      </label>
+      <label>
+        <div class="label__text">Email Id<span class="dot">*</span></div>
+
+        <input type="text" name="email_input" />
+        <div id="email_error_msg" class="error_msg"></div>
+      </label>
+      <label>
+        <div class="label__text">City<span class="dot">*</span></div>
+        <input type="text" name="city_input" />
+        <div id="city_input_error_msg" class="error_msg"></div>
+      </label>
+      <label>
+        <div class="label__text">State<span class="dot">*</span></div>
+        <input type="text" name="state_input" />
+        <div id="state_input_error_msg" class="error_msg"></div>
+      </label>
+      <button class="submit__btn">Submit</button>
     </form>
 
-    <img src="./bodyImg1-removebg-preview.png" alt="people"class="bodyImg">
+    <img src="./bodyImg1-removebg-preview.png" alt="people" class="bodyImg" />
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
