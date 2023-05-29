@@ -1,24 +1,29 @@
 function ValidateEmail(input) {
   let validRegex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
   let inputErrorFeild = document.getElementById("email_error_msg");
-
+  let emailInputField = document.getElementById("email_input");
+  console.log(emailInputField)
   if (validRegex.test(input) && input.trim() !== "") {
     inputErrorFeild.innerHTML = "";
+    emailInputField.style.borderColor = "black";
     return true;
   } else {
-    document.userForm.email_input.focus();
+    // document.userForm.email_input.focus();
     inputErrorFeild.innerHTML = "Please enter a valid Email";
+    emailInputField.style.borderColor = "red";
     return false;
   }
 }
 const validateMandatory = (text, name) => {
   let nameErrorField = document.getElementById(`${name}_error_msg`);
-console.log(nameErrorField)
+  let inputField = document.getElementById(`${name}`);
   if (text.trim() !== "") {
     nameErrorField.innerHTML = "";
+    inputField.style.borderColor = "black";
     return true;
   } else {
     nameErrorField.innerHTML = "This feild can not be empty";
+    inputField.style.borderColor = "red";
     return false;
   }
 };
@@ -34,7 +39,7 @@ let validatePhone = (input) => {
       inputErrorFeild.innerHTML = "Please enter a valid Phone number";
       return false;
     }
-  }else{
+  } else {
     inputErrorFeild.innerHTML = "";
     return true;
   }

@@ -34,7 +34,7 @@ body{
 }
 input{
     background: white;
-    border: 2px solid black !important;
+    border: 2px solid black ;
     border-radius: 5px;
     height: 30px;
     width: clamp(200px, 80vw, 300px) !important;
